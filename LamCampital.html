@@ -1,0 +1,650 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Lam Capital - Investment & Advisory for Sustainable Development</title>\
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">\
+    <style>\
+        /* Reset and Base Styles */\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+        body \{\
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
+            line-height: 1.7;\
+            color: #1a1a1a;\
+            background-color: #ffffff;\
+        \}\
+        h1, h2, h3 \{\
+            font-family: 'Playfair Display', serif;\
+            font-weight: 400;\
+            letter-spacing: 0.5px;\
+        \}\
+        .container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 20px;\
+        \}\
+        /* Header */\
+        header \{\
+            position: fixed;\
+            top: 0;\
+            width: 100%;\
+            background: rgba(255, 255, 255, 0.98);\
+            backdrop-filter: blur(20px);\
+            z-index: 1000;\
+            padding: 1rem 0;\
+            border-bottom: 1px solid #f0f0f0;\
+            transition: all 0.3s ease;\
+        \}\
+        nav \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+        .logo \{\
+            font-size: 1.8rem;\
+            font-weight: 700;\
+            color: #1a1a1a;\
+            font-family: 'Playfair Display', serif;\
+        \}\
+        .nav-links \{\
+            display: flex;\
+            list-style: none;\
+            gap: 2.5rem;\
+        \}\
+        .nav-links a \{\
+            text-decoration: none;\
+            color: #1a1a1a;\
+            font-weight: 400;\
+            font-size: 0.95rem;\
+            transition: color 0.3s ease;\
+            position: relative;\
+        \}\
+        .nav-links a::after \{\
+            content: '';\
+            position: absolute;\
+            width: 0;\
+            height: 2px;\
+            bottom: -5px;\
+            left: 0;\
+            background-color: #B76E79;\
+            transition: width 0.3s ease;\
+        \}\
+        .nav-links a:hover::after \{\
+            width: 100%;\
+        \}\
+        .nav-links a:hover \{\
+            color: #B76E79;\
+        \}\
+        /* Hero Section */\
+        #hero \{\
+            height: 100vh;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            text-align: center;\
+            background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);\
+            padding-top: 80px;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        #hero::before \{\
+            content: '';\
+            position: absolute;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            background: radial-gradient(circle at 20% 80%, rgba(183, 110, 121, 0.05) 0%, transparent 50%);\
+            pointer-events: none;\
+        \}\
+        .hero-content h1 \{\
+            font-size: 4rem;\
+            margin-bottom: 1rem;\
+            color: #1a1a1a;\
+            opacity: 0;\
+            animation: fadeInUp 1s ease forwards;\
+        \}\
+        .hero-content .tagline \{\
+            font-size: 1.8rem;\
+            margin-bottom: 1.5rem;\
+            color: #4a4a4a;\
+            font-weight: 300;\
+            opacity: 0;\
+            animation: fadeInUp 1s ease 0.2s forwards;\
+        \}\
+        .hero-content .subtitle \{\
+            font-size: 1.3rem;\
+            max-width: 800px;\
+            margin: 0 auto 3.5rem;\
+            color: #666666;\
+            opacity: 0;\
+            animation: fadeInUp 1s ease 0.4s forwards;\
+        \}\
+        .cta \{\
+            display: inline-block;\
+            padding: 14px 32px;\
+            background: linear-gradient(135deg, #B76E79 0%, #D4A5A5 100%);\
+            color: #ffffff;\
+            text-decoration: none;\
+            border-radius: 50px;\
+            font-weight: 600;\
+            font-size: 1rem;\
+            transition: all 0.3s ease;\
+            box-shadow: 0 4px 15px rgba(183, 110, 121, 0.2);\
+            opacity: 0;\
+            animation: fadeInUp 1s ease 0.6s forwards;\
+        \}\
+        .cta:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 6px 20px rgba(183, 110, 121, 0.3);\
+        \}\
+        @keyframes fadeInUp \{\
+            to \{\
+                opacity: 1;\
+                transform: translateY(0);\
+            \}\
+        \}\
+        /* Section Styles */\
+        section \{\
+            padding: 120px 0;\
+        \}\
+        h2 \{\
+            font-size: 3rem;\
+            text-align: center;\
+            margin-bottom: 4rem;\
+            color: #1a1a1a;\
+        \}\
+        /* About Section */\
+        #about \{\
+            background: #fafafa;\
+        \}\
+        .about-content \{\
+            max-width: 800px;\
+            margin: 0 auto;\
+            text-align: center;\
+            font-size: 1.15rem;\
+            line-height: 1.9;\
+            color: #4a4a4a;\
+        \}\
+        .about-content p \{\
+            margin-bottom: 2rem;\
+        \}\
+        .map-section \{\
+            text-align: center;\
+            margin-top: 4rem;\
+        \}\
+        .map-section img \{\
+            width: 100%;\
+            max-width: 900px;\
+            height: auto;\
+            border-radius: 12px;\
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);\
+            transition: transform 0.3s ease;\
+        \}\
+        .map-section img:hover \{\
+            transform: scale(1.02);\
+        \}\
+        .map-section p \{\
+            font-style: italic;\
+            color: #B76E79;\
+            margin-top: 1.5rem;\
+            font-size: 1.15rem;\
+            font-weight: 600;\
+        \}\
+        /* Expertise Section */\
+        #expertise \{\
+            background: #ffffff;\
+        \}\
+        .expertise-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));\
+            gap: 2.5rem;\
+        \}\
+        .expertise-card \{\
+            background: #ffffff;\
+            padding: 2.5rem;\
+            border-radius: 16px;\
+            box-shadow: 0 5px 25px rgba(0,0,0,0.06);\
+            text-align: left;\
+            transition: all 0.4s ease;\
+            border: 1px solid #f0f0f0;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        .expertise-card::before \{\
+            content: '';\
+            position: absolute;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 4px;\
+            background: linear-gradient(90deg, #B76E79, #D4A5A5);\
+        \}\
+        .expertise-card:hover \{\
+            transform: translateY(-8px);\
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);\
+        \}\
+        .expertise-card h3 \{\
+            font-size: 1.6rem;\
+            margin-bottom: 1.2rem;\
+            color: #1a1a1a;\
+        \}\
+        .expertise-card p \{\
+            color: #666666;\
+            font-size: 1rem;\
+            line-height: 1.8;\
+        \}\
+        /* Media Section */\
+        #media \{\
+            background: #fafafa;\
+        \}\
+        .news-list \{\
+            max-width: 800px;\
+            margin: 0 auto;\
+        \}\
+        .news-list ul \{\
+            list-style: none;\
+        \}\
+        .news-list li \{\
+            margin-bottom: 0.75rem;\
+            padding: 0.75rem;\
+            background: #ffffff;\
+            border-radius: 6px;\
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);\
+            transition: transform 0.3s ease;\
+            border-left: 3px solid #f0f0f0;\
+        \}\
+        .news-list li:hover \{\
+            transform: translateX(2px);\
+            border-left-color: #B76E79;\
+        \}\
+        .news-list a \{\
+            text-decoration: none;\
+            color: #1a1a1a;\
+            font-weight: 600;\
+            font-size: 0.95rem;\
+            display: block;\
+            line-height: 1.4;\
+        \}\
+        .news-list a:hover \{\
+            color: #B76E79;\
+        \}\
+        .news-list p \{\
+            margin-top: 0.3rem;\
+            color: #888888;\
+            font-size: 0.8rem;\
+            font-style: italic;\
+        \}\
+        .news-toggle \{\
+            text-align: center;\
+            margin-top: 2rem;\
+        \}\
+        .news-toggle button \{\
+            background: linear-gradient(135deg, #B76E79 0%, #D4A5A5 100%);\
+            color: #ffffff;\
+            padding: 10px 24px;\
+            border: none;\
+            border-radius: 25px;\
+            cursor: pointer;\
+            font-weight: 600;\
+            font-size: 0.95rem;\
+            transition: all 0.3s ease;\
+        \}\
+        .news-toggle button:hover \{\
+            transform: translateY(-1px);\
+            box-shadow: 0 4px 12px rgba(183, 110, 121, 0.3);\
+        \}\
+        .additional-news \{\
+            max-height: 0;\
+            overflow: hidden;\
+            transition: max-height 0.5s ease;\
+        \}\
+        .additional-news.expanded \{\
+            max-height: 1000px; /* Adjust as needed */\
+        \}\
+        /* Contact Section */\
+        #contact \{\
+            background: #ffffff;\
+        \}\
+        .contact-content \{\
+            max-width: 700px;\
+            margin: 0 auto;\
+            text-align: center;\
+        \}\
+        .contact-content p \{\
+            font-size: 1.15rem;\
+            margin-bottom: 1.5rem;\
+            color: #4a4a4a;\
+        \}\
+        .contact-content a \{\
+            color: #B76E79;\
+            text-decoration: none;\
+            font-weight: 600;\
+        \}\
+        .contact-content a:hover \{\
+            text-decoration: underline;\
+        \}\
+        .form-group \{\
+            margin-bottom: 1.5rem;\
+            text-align: left;\
+        \}\
+        .form-group label \{\
+            display: block;\
+            margin-bottom: 0.8rem;\
+            font-weight: 600;\
+            color: #1a1a1a;\
+            font-size: 0.95rem;\
+        \}\
+        .form-group input,\
+        .form-group textarea \{\
+            width: 100%;\
+            padding: 1rem;\
+            border: 1px solid #e0e0e0;\
+            border-radius: 8px;\
+            font-size: 1rem;\
+            font-family: inherit;\
+            transition: border-color 0.3s ease;\
+            background: #fafafa;\
+        \}\
+        .form-group input:focus,\
+        .form-group textarea:focus \{\
+            outline: none;\
+            border-color: #B76E79;\
+            background: #ffffff;\
+        \}\
+        .form-group button \{\
+            background: linear-gradient(135deg, #B76E79 0%, #D4A5A5 100%);\
+            color: #ffffff;\
+            padding: 14px 32px;\
+            border: none;\
+            border-radius: 50px;\
+            cursor: pointer;\
+            font-weight: 600;\
+            font-size: 1rem;\
+            transition: all 0.3s ease;\
+            width: 100%;\
+        \}\
+        .form-group button:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 6px 20px rgba(183, 110, 121, 0.3);\
+        \}\
+        /* Footer */\
+        footer \{\
+            background: #1a1a1a;\
+            color: #cccccc;\
+            text-align: center;\
+            padding: 60px 0;\
+        \}\
+        .footer-content \{\
+            max-width: 800px;\
+            margin: 0 auto;\
+        \}\
+        .footer-content p \{\
+            margin-bottom: 0.5rem;\
+            color: #999999;\
+        \}\
+        /* Responsiveness */\
+        @media (max-width: 768px) \{\
+            .nav-links \{\
+                display: none; /* Implement mobile menu as needed */\
+            \}\
+            .hero-content h1 \{\
+                font-size: 2.5rem;\
+            \}\
+            .hero-content .tagline \{\
+                font-size: 1.4rem;\
+            \}\
+            h2 \{\
+                font-size: 2.2rem;\
+            \}\
+            section \{\
+                padding: 80px 0;\
+            \}\
+            .expertise-grid \{\
+                grid-template-columns: 1fr;\
+                gap: 2rem;\
+            \}\
+            .map-section img \{\
+                max-width: 100%;\
+            \}\
+            .news-list li \{\
+                margin-bottom: 0.6rem;\
+                padding: 0.6rem;\
+            \}\
+            .news-list a \{\
+                font-size: 0.9rem;\
+            \}\
+            .news-list p \{\
+                font-size: 0.75rem;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <header>\
+        <nav class="container">\
+            <div class="logo">Lam Capital</div>\
+            <ul class="nav-links">\
+                <li><a href="#hero">Home</a></li>\
+                <li><a href="#about">About</a></li>\
+                <li><a href="#expertise">Expertise</a></li>\
+                <li><a href="#media">Media</a></li>\
+                <li><a href="#contact">Contact</a></li>\
+            </ul>\
+        </nav>\
+    </header>\
+\
+    <section id="hero">\
+        <div class="container">\
+            <div class="hero-content">\
+                <h1>Lam Capital</h1>\
+                <p class="tagline">Investment & Advisory for Sustainable Development</p>\
+                <p class="subtitle">Turning Strategy, Research, and Capital into Sustainable Impact</p>\
+                <a href="#about" class="cta">Learn More</a>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="about">\
+        <div class="container">\
+            <div class="about-content">\
+                <p>Lam Capital Investment & Advisory Co., Ltd. is a multidisciplinary firm providing investment advisory, management consulting, research, and project delivery services across sustainable development, urban systems, real estate, and related industries.</p>\
+                <p>We work with private companies, investors, and public-sector partners to structure, develop, and formalize projects and portfolios that are technically sound, commercially viable, and aligned with international ESG and sustainability standards.</p>\
+            </div>\
+            <div class="map-section">\
+                <img src="https://thumbs.dreamstime.com/b/modern-gold-world-map-design-vector-trendy-120313026.jpg" alt="Elegant Rose Gold World Map - International Experience">\
+                <p>Global Reach: Experience working internationally across sustainable development projects.</p>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="expertise">\
+        <div class="container">\
+            <h2>Our Expertise</h2>\
+            <div class="expertise-grid">\
+                <div class="expertise-card">\
+                    <h3>Strategic Advisory & Management Consulting</h3>\
+                    <p>We provide management consulting and strategic advisory services to support business development, investment planning, and organizational decision-making. Our work covers corporate strategy, project structuring, operational models, and risk management, with a strong focus on long-term value creation.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Research, Market Intelligence & Applied R&D</h3>\
+                    <p>Lam Capital conducts research and market analysis across economic, technical, and social dimensions. Our services include market research, feasibility studies, applied research, and technical analysis to support policy design, investment decisions, and project development.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Sustainable Construction & Built Environment Services</h3>\
+                    <p>We support construction and building-related activities through technical advisory, system installation, project coordination, and completion support. Our approach integrates sustainability, efficiency, and lifecycle performance into the delivery of residential, commercial, and specialized developments.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Real Estate & Urban Development Advisory</h3>\
+                    <p>Lam Capital advises on real estate development and urban planning, supporting projects from early concept to implementation. We help align land use, design, infrastructure, and investment strategies to create resilient, people-centered, and economically viable urban environments.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>ESG & Sustainable Finance Advisory</h3>\
+                    <p>We assist clients in integrating environmental, social, and governance (ESG) considerations into projects, companies, and portfolios. Services include ESG strategy development, sustainability assessments, and alignment with international frameworks, enabling access to green, sustainable, and climate-aligned finance.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Portfolio Structuring for Investment</h3>\
+                    <p>Lam Capital supports clients in formalizing projects and asset portfolios for domestic and international investment. This includes standardizing technical, financial, and ESG documentation, improving transparency, and positioning portfolios to meet institutional investor expectations.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Access to Global Capital & Partnerships</h3>\
+                    <p>We act as a bridge between local opportunities and international investors, development finance institutions, and climate funds. Our role is to translate local project realities into investment-ready propositions aligned with global capital requirements.</p>\
+                </div>\
+                <div class="expertise-card">\
+                    <h3>Communications, Media & Promotion</h3>\
+                    <p>Complementing our advisory work, Lam Capital engages in communications, media production, advertising, and promotional activities, including content development and audiovisual production, to support project visibility, stakeholder engagement, and market outreach.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="media">\
+        <div class="container">\
+            <h2>In the News</h2>\
+            <div class="news-list">\
+                <ul>\
+                    <li>\
+                        <a href="https://vir.com.vn/private-sector-offers-up-urban-potential-129699.html" target="_blank">Private sector offers up urban potential, 2025 (No 1 most viewed)</a>\
+                        <p>VIR, June 2025</p>\
+                    </li>\
+                    <li>\
+                        <a href="https://vir.com.vn/from-compliance-to-strategy-esg-criteria-gaining-ground-137555.html" target="_blank">The role of governance in shaping corporate development</a>\
+                        <p>VIR Special Edition, September 2025</p>\
+                    </li>\
+                    <li>\
+                        <a href="https://vir.com.vn/precise-planning-vital-for-relocation-of-ips-113193.html" target="_blank">Precise planning vital for relocation of IPs 2024</a>\
+                        <p>VIR, July 2024</p>\
+                    </li>\
+                    <li>\
+                        <a href="https://vir.com.vn/the-pros-and-cons-of-ip-relocations-112404.html" target="_blank">The pros and cons of IP relocations</a>\
+                        <p>VIR, July 2024</p>\
+                    </li>\
+                    <div class="additional-news">\
+                        <li>\
+                            <a href="https://vir.com.vn/opportunities-to-unlock-in-vietnams-green-finance-arena-110442.html" target="_blank">Opportunities to unlock in Vietnam\'92s green finance arena</a>\
+                            <p>VIR, April 2024</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://vir.com.vn/how-real-estate-developers-can-benefit-from-esg-considerations-99226.html" target="_blank">How real estate developers can benefit from ESG considerations 2023, No 1 most viewed</a>\
+                            <p>VIR, January 2023</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://baodautu.vn/dau-tu-tu-nhan-kien-tao-do-thi-thong-minh-ben-vung-d299998.html" target="_blank">\uc0\u272 \u7847 u t\u432  t\u432  nh\'e2n ki\u7871 n t\u7841 o \u273 \'f4 th\u7883  th\'f4ng minh, b\u7873 n v\u7919 ng</a>\
+                            <p>Bao Dau Tu, June 2025</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://www.tinnhanhchungkhoan.vn/tai-chinh-do-thi-dich-chuyen-dong-von-xanh-post347485.html" target="_blank">T\'e0i ch\'ednh \uc0\u273 \'f4 th\u7883  \'93d\u7883 ch chuy\u7875 n\'94 d\'f2ng v\u7889 n xanh</a>\
+                            <p>Tin Nhanh Chung Khoan, June 2024</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://dantri.com.vn/kinh-doanh/tiep-can-esg-bat-dau-tu-dau-lam-sao-toi-da-hieu-qua-nguon-luc-20240411153558726.htm" target="_blank">Navigating ESG: Initial Steps and Strategies for Optimal Resource Utilization (In Vietnamese) 2024</a>\
+                            <p>Dan Tri, April 2024</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://vir.com.vn/housing-operations-must-be-effective-143815.html" target="_blank">Affordable housing - How to increase the supply effectively</a>\
+                            <p>VIR, December 2025</p>\
+                        </li>\
+                        <li>\
+                            <a href="https://e.vnexpress.net/news/perspectives/saigon-river-has-much-to-offer-and-hcmc-should-use-it-smartly-4515082.html" target="_blank">Saigon River basin planning</a>\
+                            <p>VNExpress Opinion, October 2022</p>\
+                        </li>\
+                    </div>\
+                </ul>\
+                <div class="news-toggle">\
+                    <button id="toggleNews">See More Articles</button>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="contact">\
+        <div class="container">\
+            <h2>Contact Us</h2>\
+            <div class="contact-content">\
+                <p><strong>Email:</strong> <a href="mailto:info@lamcapitalgroup.com">info@lamcapitalgroup.com</a></p>\
+                <p><strong>Phone:</strong> <a href="tel:+84281234567">+84 28 1234 567</a></p>\
+                <p><strong>Address:</strong> 36 Mac Dinh Chi, Tan Dinh, Ho Chi Minh City</p>\
+                <form>\
+                    <div class="form-group">\
+                        <label for="name">Name</label>\
+                        <input type="text" id="name" name="name" required>\
+                    </div>\
+                    <div class="form-group">\
+                        <label for="email">Email</label>\
+                        <input type="email" id="email" name="email" required>\
+                    </div>\
+                    <div class="form-group">\
+                        <label for="message">Message</label>\
+                        <textarea id="message" name="message" rows="5" required></textarea>\
+                    </div>\
+                    <div class="form-group">\
+                        <button type="submit">Send Message</button>\
+                    </div>\
+                </form>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <footer>\
+        <div class="container">\
+            <div class="footer-content">\
+                <p>&copy; 2026 Lam Capital Investment & Advisory Co., Ltd. All rights reserved.</p>\
+                <p>Contact us for partnerships and inquiries.</p>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // Smooth scrolling for nav links\
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => \{\
+            anchor.addEventListener('click', function (e) \{\
+                e.preventDefault();\
+                document.querySelector(this.getAttribute('href')).scrollIntoView(\{\
+                    behavior: 'smooth'\
+                \});\
+            \});\
+        \});\
+\
+        // Basic form submission (placeholder)\
+        document.querySelector('form').addEventListener('submit', function(e) \{\
+            e.preventDefault();\
+            alert('Thank you for your message! We will get back to you soon.');\
+        \});\
+\
+        // Header scroll effect\
+        window.addEventListener('scroll', () => \{\
+            const header = document.querySelector('header');\
+            if (window.scrollY > 100) \{\
+                header.style.background = 'rgba(255, 255, 255, 0.95)';\
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';\
+            \} else \{\
+                header.style.background = 'rgba(255, 255, 255, 0.98)';\
+                header.style.boxShadow = 'none';\
+            \}\
+        \});\
+\
+        // News toggle functionality\
+        const toggleBtn = document.getElementById('toggleNews');\
+        const additionalNews = document.querySelector('.additional-news');\
+        let isExpanded = false;\
+\
+        toggleBtn.addEventListener('click', () => \{\
+            isExpanded = !isExpanded;\
+            additionalNews.classList.toggle('expanded', isExpanded);\
+            toggleBtn.textContent = isExpanded ? 'See Less Articles' : 'See More Articles';\
+        \});\
+    </script>\
+</body>\
+</html>}
