@@ -94,7 +94,6 @@
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
-            text-decoration: none;
         }
         .lang-btn:hover {
             background: #f8f8f8;
@@ -465,8 +464,8 @@
                 <li><a href="#contact" id="nav-contact">Contact</a></li>
             </ul>
             <div class="lang-buttons">
-                <a href="#en" id="lang-en" class="lang-btn active">EN</a>
-                <a href="#ja" id="lang-ja" class="lang-btn">日本語</a>
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-ja" class="lang-btn">日本語</button>
             </div>
         </nav>
     </header>
@@ -723,7 +722,6 @@
         let currentLang = 'en';
 
         function setLanguage(lang) {
-            if (currentLang === lang) return;
             currentLang = lang;
             document.documentElement.setAttribute('lang', lang);
             document.title = translations[lang].title;
@@ -775,37 +773,19 @@
             // Update active button
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`lang-${lang}`).classList.add('active');
-
-            // Update URL hash without reload
-            window.location.hash = lang;
         }
 
-        // Detect language from URL hash on load
-        function initLanguage() {
-            const hash = window.location.hash.substring(1); // Remove #
-            const lang = (hash === 'ja' || hash === 'en') ? hash : 'en';
-            setLanguage(lang);
-        }
-
-        // Language buttons (now as links, but handled by JS)
-        document.getElementById('lang-en').addEventListener('click', (e) => {
-            e.preventDefault();
-            setLanguage('en');
-        });
-        document.getElementById('lang-ja').addEventListener('click', (e) => {
-            e.preventDefault();
-            setLanguage('ja');
-        });
+        // Language buttons
+        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('lang-ja').addEventListener('click', () => setLanguage('ja'));
 
         // Smooth scrolling for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                if (!this.getAttribute('href').startsWith('#lang-')) { // Skip lang links
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
 
@@ -837,14 +817,8 @@
             toggleBtn.textContent = isExpanded ? translations[currentLang].toggle_less : translations[currentLang].toggle_initial;
         });
 
-        // Initialize language on load
-        window.addEventListener('DOMContentLoaded', initLanguage);
-        window.addEventListener('hashchange', () => {
-            const hash = window.location.hash.substring(1);
-            if (hash === 'ja' || hash === 'en') {
-                setLanguage(hash);
-            }
-        });
+        // Initialize language
+        setLanguage('en');
     </script>
 </body>
 </html>
