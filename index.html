@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lam Capital - 持続可能な開発に向けた投資・アドバイザリー</title>
+    <title>Lam Capital - Investment & Advisory for Sustainable Development</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.png">
-<link rel="icon" type="image/svg+xml" href="favicon.png">
+
     <style>
         /* Reset and Base Styles */
         * {
@@ -30,6 +35,24 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        /* Logo styles */
+        .logo {
+            line-height: 1;
+        }
+        .logo a {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .logo img {
+            height: 52px;
+            width: auto;
+            display: block;
+            max-height: 56px;
+            vertical-align: middle;
+        }
+
         /* Header */
         header {
             position: fixed;
@@ -46,12 +69,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1a1a1a;
-            font-family: 'Playfair Display', serif;
         }
         .nav-links {
             display: flex;
@@ -106,6 +123,7 @@
             color: white;
             border-color: #CA3F16;
         }
+
         /* Hero Section */
         #hero {
             height: 100vh;
@@ -175,6 +193,7 @@
                 transform: translateY(0);
             }
         }
+
         /* Section Styles */
         section {
             padding: 120px 0;
@@ -185,6 +204,7 @@
             margin-bottom: 4rem;
             color: #1a1a1a;
         }
+
         /* About Section */
         #about {
             background: #fafafa;
@@ -222,6 +242,7 @@
             font-size: 1.15rem;
             font-weight: 600;
         }
+
         /* Expertise Section */
         #expertise {
             background: #ffffff;
@@ -265,6 +286,7 @@
             font-size: 1rem;
             line-height: 1.8;
         }
+
         /* Media Section */
         #media {
             background: #fafafa;
@@ -331,8 +353,9 @@
             transition: max-height 0.5s ease;
         }
         .additional-news.expanded {
-            max-height: 1000px; /* Adjust as needed */
+            max-height: 1000px;
         }
+
         /* Contact Section */
         #contact {
             background: #ffffff;
@@ -399,6 +422,7 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(202, 63, 22, 0.3);
         }
+
         /* Footer */
         footer {
             background: #1a1a1a;
@@ -414,6 +438,7 @@
             margin-bottom: 0.5rem;
             color: #999999;
         }
+
         /* Back to Top Button */
         #backToTop {
             position: fixed;
@@ -436,6 +461,7 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(202, 63, 22, 0.3);
         }
+
         /* Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
@@ -487,9 +513,10 @@
     <header>
         <nav class="container">
             <div class="logo" id="logo">
-    <img src="logolong.png" alt="Lam Capital" style="height: 48px; width: auto;">
-    <!-- or PNG: <img src="logolong.png" alt="Lam Capital" style="height: 48px; width: auto;"> -->
-</div>
+                <a href="#hero">
+                    <img src="logo.png" alt="Lam Capital">
+                </a>
+            </div>
             <ul class="nav-links">
                 <li><a href="#hero" id="nav-home">ホーム</a></li>
                 <li><a href="#about" id="nav-about">当社について</a></li>
@@ -498,11 +525,12 @@
                 <li><a href="#contact" id="nav-contact">お問い合わせ</a></li>
             </ul>
             <div class="lang-buttons">
-                <button id="lang-en" class="lang-btn">EN</button>
-                <button id="lang-ja" class="lang-btn active">日本</button>
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-ja" class="lang-btn">日本</button>
             </div>
         </nav>
     </header>
+
     <section id="hero">
         <div class="container">
             <div class="hero-content">
@@ -513,6 +541,7 @@
             </div>
         </div>
     </section>
+
     <section id="about">
         <div class="container">
             <div class="about-content">
@@ -520,11 +549,12 @@
                 <p id="about-p2">当社は、民間企業、投資家、公的機関と連携し、国際的なESGおよびサステナビリティ基準に適合した、技術的信頼性と商業的実現性を備えるプロジェクトおよび投資ポートフォリオの構築・高度化を支援しています。</p>
             </div>
             <div class="map-section">
-                <img src="map1.jpg" alt="Elegant Rose Gold World Map - International Experience">
+                <img src="map1.jpg" >
                 <p id="map-p">Lam Capital は、米国、日本、カナダ、欧州連合、オーストラリア、ASEAN 諸国において、パートナー、クライアント、金融機関および公的機関と連携した豊富な国際プロジェクト経験を有しています。地域の実情に即した知見と国際水準の専門性を組み合わせ、グローバルに通用する実行力あるソリューションを提供します。</p>
             </div>
         </div>
     </section>
+
     <section id="expertise">
         <div class="container">
             <h2 id="expertise-h2">当社の専門分野</h2>
@@ -564,6 +594,7 @@
             </div>
         </div>
     </section>
+
     <section id="media">
         <div class="container">
             <h2 id="media-h2">ニュース</h2>
@@ -573,7 +604,6 @@
                         <a href="https://vir.com.vn/private-sector-offers-up-urban-potential-129699.html" target="_blank">民間セクターが切り拓く都市の可能性（2025年・最多閲覧）</a>
                         <p>VIR｜2025年6月</p>
                     </li>
-                  
                     <li>
                         <a href="https://vir.com.vn/precise-planning-vital-for-relocation-of-ips-113193.html" target="_blank">工業団地移転における精緻な計画の重要性</a>
                         <p>VIR｜2024年7月</p>
@@ -619,6 +649,7 @@
             </div>
         </div>
     </section>
+
     <section id="contact">
         <div class="container">
             <h2 id="contact-h2">お問い合わせ</h2>
@@ -646,6 +677,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -654,13 +686,13 @@
             </div>
         </div>
     </footer>
+
     <button id="backToTop">↑</button>
+
     <script>
-        // Translations
         const translations = {
             en: {
                 title: "Lam Capital - Investment & Advisory for Sustainable Development",
-                logo: "Lam Capital",
                 nav_home: "Home",
                 nav_about: "About",
                 nav_expertise: "Expertise",
@@ -708,7 +740,6 @@
             },
             ja: {
                 title: "Lam Capital - 持続可能な開発に向けた投資・アドバイザリー",
-                logo: "Lam Capital",
                 nav_home: "ホーム",
                 nav_about: "当社について",
                 nav_expertise: "専門分野",
@@ -755,13 +786,14 @@
                 back_to_top: "↑"
             }
         };
-        let currentLang = 'ja';
+
+        let currentLang = 'en';
+
         function setLanguage(lang) {
             currentLang = lang;
             document.documentElement.setAttribute('lang', lang);
             document.title = translations[lang].title;
-            // Update all texts
-            document.getElementById('logo').textContent = translations[lang].logo;
+
             document.getElementById('nav-home').textContent = translations[lang].nav_home;
             document.getElementById('nav-about').textContent = translations[lang].nav_about;
             document.getElementById('nav-expertise').textContent = translations[lang].nav_expertise;
@@ -804,14 +836,14 @@
             document.getElementById('footer-p1').textContent = translations[lang].footer_p1;
             document.getElementById('footer-p2').textContent = translations[lang].footer_p2;
             document.getElementById('backToTop').textContent = translations[lang].back_to_top;
-            // Update active button
+
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`lang-${lang}`).classList.add('active');
         }
-        // Language buttons
+
         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
         document.getElementById('lang-ja').addEventListener('click', () => setLanguage('ja'));
-        // Smooth scrolling for nav links
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -820,12 +852,12 @@
                 });
             });
         });
-        // Basic form submission (placeholder)
+
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert(translations[currentLang].form_submit);
         });
-        // Header scroll effect
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -835,22 +867,14 @@
                 header.style.background = 'rgba(255, 255, 255, 0.98)';
                 header.style.boxShadow = 'none';
             }
-            // Back to top visibility
             const backToTopBtn = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                backToTopBtn.style.display = 'block';
-            } else {
-                backToTopBtn.style.display = 'none';
-            }
+            backToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
         });
-        // Back to top functionality
+
         document.getElementById('backToTop').addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-        // News toggle functionality
+
         const toggleBtn = document.getElementById('toggleNews');
         const additionalNews = document.querySelector('.additional-news');
         let isExpanded = false;
@@ -859,7 +883,8 @@
             additionalNews.classList.toggle('expanded', isExpanded);
             toggleBtn.textContent = isExpanded ? translations[currentLang].toggle_less : translations[currentLang].toggle_initial;
         });
-        // Initialize language
+
+        // Start with English
         setLanguage('en');
     </script>
 </body>
