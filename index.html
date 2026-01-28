@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lam Capital - Investment & Advisory for Sustainable Development</title>
-
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts: Added Outfit (includes 600 = SemiBold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <style>
         /* Reset and Base Styles */
@@ -35,7 +35,6 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-
         /* Logo styles */
         .logo {
             line-height: 1;
@@ -52,7 +51,6 @@
             max-height: 56px;
             vertical-align: middle;
         }
-
         /* Header */
         header {
             position: fixed;
@@ -80,8 +78,12 @@
             color: #1a1a1a;
             font-weight: 400;
             font-size: 0.95rem;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, font-weight 0.2s ease;
             position: relative;
+        }
+        .nav-links a:hover {
+            color: #CA3F16;
+            font-weight: 600;           /* ← Bold on hover (semi-bold) */
         }
         .nav-links a::after {
             content: '';
@@ -95,9 +97,6 @@
         }
         .nav-links a:hover::after {
             width: 100%;
-        }
-        .nav-links a:hover {
-            color: #CA3F16;
         }
         .lang-buttons {
             display: flex;
@@ -123,7 +122,6 @@
             color: white;
             border-color: #CA3F16;
         }
-
         /* Hero Section */
         #hero {
             height: 100vh;
@@ -152,6 +150,9 @@
             color: #1a1a1a;
             opacity: 0;
             animation: fadeInUp 1s ease forwards;
+            /* Changed to Outfit Semibold */
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
         }
         .hero-content .tagline {
             font-size: 1.8rem;
@@ -193,7 +194,6 @@
                 transform: translateY(0);
             }
         }
-
         /* Section Styles */
         section {
             padding: 120px 0;
@@ -204,7 +204,6 @@
             margin-bottom: 4rem;
             color: #1a1a1a;
         }
-
         /* About Section */
         #about {
             background: #fafafa;
@@ -242,7 +241,6 @@
             font-size: 1.15rem;
             font-weight: 600;
         }
-
         /* Expertise Section */
         #expertise {
             background: #ffffff;
@@ -286,7 +284,6 @@
             font-size: 1rem;
             line-height: 1.8;
         }
-
         /* Media Section */
         #media {
             background: #fafafa;
@@ -355,7 +352,6 @@
         .additional-news.expanded {
             max-height: 1000px;
         }
-
         /* Contact Section */
         #contact {
             background: #ffffff;
@@ -422,7 +418,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(202, 63, 22, 0.3);
         }
-
         /* Footer */
         footer {
             background: #1a1a1a;
@@ -438,7 +433,6 @@
             margin-bottom: 0.5rem;
             color: #999999;
         }
-
         /* Back to Top Button */
         #backToTop {
             position: fixed;
@@ -461,7 +455,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(202, 63, 22, 0.3);
         }
-
         /* Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
@@ -530,7 +523,6 @@
             </div>
         </nav>
     </header>
-
     <section id="hero">
         <div class="container">
             <div class="hero-content">
@@ -541,7 +533,6 @@
             </div>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
             <div class="about-content">
@@ -554,7 +545,6 @@
             </div>
         </div>
     </section>
-
     <section id="expertise">
         <div class="container">
             <h2 id="expertise-h2">当社の専門分野</h2>
@@ -594,7 +584,6 @@
             </div>
         </div>
     </section>
-
     <section id="media">
         <div class="container">
             <h2 id="media-h2">ニュース</h2>
@@ -649,7 +638,6 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
         <div class="container">
             <h2 id="contact-h2">お問い合わせ</h2>
@@ -677,7 +665,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -686,7 +673,6 @@
             </div>
         </div>
     </footer>
-
     <button id="backToTop">↑</button>
 
     <script>
@@ -786,14 +772,11 @@
                 back_to_top: "↑"
             }
         };
-
         let currentLang = 'en';
-
         function setLanguage(lang) {
             currentLang = lang;
             document.documentElement.setAttribute('lang', lang);
             document.title = translations[lang].title;
-
             document.getElementById('nav-home').textContent = translations[lang].nav_home;
             document.getElementById('nav-about').textContent = translations[lang].nav_about;
             document.getElementById('nav-expertise').textContent = translations[lang].nav_expertise;
@@ -836,14 +819,11 @@
             document.getElementById('footer-p1').textContent = translations[lang].footer_p1;
             document.getElementById('footer-p2').textContent = translations[lang].footer_p2;
             document.getElementById('backToTop').textContent = translations[lang].back_to_top;
-
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`lang-${lang}`).classList.add('active');
         }
-
         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
         document.getElementById('lang-ja').addEventListener('click', () => setLanguage('ja'));
-
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -852,12 +832,10 @@
                 });
             });
         });
-
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert(translations[currentLang].form_submit);
         });
-
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -870,11 +848,9 @@
             const backToTopBtn = document.getElementById('backToTop');
             backToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
         });
-
         document.getElementById('backToTop').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
         const toggleBtn = document.getElementById('toggleNews');
         const additionalNews = document.querySelector('.additional-news');
         let isExpanded = false;
@@ -883,7 +859,6 @@
             additionalNews.classList.toggle('expanded', isExpanded);
             toggleBtn.textContent = isExpanded ? translations[currentLang].toggle_less : translations[currentLang].toggle_initial;
         });
-
         // Start with English
         setLanguage('en');
     </script>
