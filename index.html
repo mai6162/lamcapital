@@ -6,12 +6,10 @@
     <title>Lam Capital - Where capital, real estate, and sustainability converge</title>
     <!-- Favicon -->
     <link rel="icon" href="favicon.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <!-- Google Fonts: Added Outfit (includes 600 = SemiBold) -->
+   
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <style>
         /* Reset and Base Styles */
         * {
@@ -83,7 +81,7 @@
         }
         .nav-links a:hover {
             color: #CA3F16;
-            font-weight: 600;           /* ← Bold on hover (semi-bold) */
+            font-weight: 600;
         }
         .nav-links a::after {
             content: '';
@@ -150,7 +148,6 @@
             color: #1a1a1a;
             opacity: 0;
             animation: fadeInUp 1s ease forwards;
-            /* Changed to Outfit Semibold */
             font-family: 'Outfit', sans-serif;
             font-weight: 600;
         }
@@ -158,7 +155,7 @@
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             color: #4a4a4a;
-            font-weight: 300;
+            font-weight: 600; /* ← made bold */
             opacity: 0;
             animation: fadeInUp 1s ease 0.2s forwards;
         }
@@ -239,7 +236,7 @@
             color: #CA3F16;
             margin-top: 1.5rem;
             font-size: 1.15rem;
-            font-weight: 600;
+            line-height: 1.6;
         }
         /* Expertise Section */
         #expertise {
@@ -352,7 +349,7 @@
         .additional-news.expanded {
             max-height: 1000px;
         }
-        /* Contact Section */
+        /* Contact Section – tightened spacing */
         #contact {
             background: #ffffff;
         }
@@ -360,11 +357,13 @@
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
+            line-height: 1.5; /* ← tightened */
         }
         .contact-content p {
             font-size: 1.15rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem; /* ← reduced from 1.5rem */
             color: #4a4a4a;
+            line-height: 1.5;
         }
         .contact-content a {
             color: #CA3F16;
@@ -375,12 +374,12 @@
             text-decoration: underline;
         }
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem; /* ← tightened */
             text-align: left;
         }
         .form-group label {
             display: block;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.6rem; /* ← reduced */
             font-weight: 600;
             color: #1a1a1a;
             font-size: 0.95rem;
@@ -458,7 +457,7 @@
         /* Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
-                display: none; /* Implement mobile menu as needed */
+                display: none;
             }
             .lang-buttons {
                 margin-left: auto;
@@ -527,90 +526,82 @@
         <div class="container">
             <div class="hero-content">
                 <h1 id="hero-h1">Lam Capital</h1>
-                <p class="tagline" id="hero-tagline">資本、不動産、サステナビリティが交わるアドバイザリー</p>
-                <p class="subtitle" id="hero-subtitle">ベトナム市場の不動産・M&Aアドバイザリー、ESGを軸とした開発支援、ならびに戦略実行を支えるエンタープライズソリューションを提供しています。</p>
-                <a href="#about" class="cta" id="hero-cta">詳細はこちら</a>
+                <p class="tagline" id="hero-tagline">Where capital, real estate, and sustainability converge</p>
+                <p class="subtitle" id="hero-subtitle">Turning Strategy, Research, and Capital into Sustainable Impact</p>
+                <a href="#about" class="cta" id="hero-cta">Learn More</a>
             </div>
         </div>
     </section>
     <section id="about">
         <div class="container">
             <div class="about-content">
-                <p id="about-p1">Lam Capital Investment & Advisory Co., Ltd. *bold* は、サステナブル開発、都市システム、不動産および関連分野において、投資アドバイザリー、経営コンサルティング、調査・リサーチ、ならびにプロジェクト実行支援を行う分野横断型のアドバイザリーファームです。</p>
-                <p id="about-p2">民間企業、投資家、公共セクターとの連携を通じて、技術的妥当性および事業性を備え、国際的なESG・サステナビリティ基準に整合したプロジェクトおよびポートフォリオの構築・整理・実行を支援しています。</p>
+                <p id="about-p1"><strong>Lam Capital Investment & Advisory Co., Ltd.</strong> is a multidisciplinary firm providing investment advisory, management consulting, research, and project delivery services across sustainable development, urban systems, real estate, and related industries.</p>
+                <p id="about-p2">We work with private companies, investors, and public-sector partners to structure, develop, and formalize projects and portfolios that are technically sound, commercially viable, and aligned with international ESG and sustainability standards.</p>
             </div>
             <div class="map-section">
-                <img src="map1.jpg" >
-                <p id="map-p">複雑な開発を、投資可能で持続可能な成果へ。
-                <br> 不動産・M&Aアドバイザリー｜ESG・グリーン開発｜エンタープライズソリューション </p>
+                <img src="map1.jpg" alt="Vietnam development focus map" loading="lazy">
+                <p id="map-p">
+                    <strong>Turning complex developments into investable, sustainable outcomes.</strong><br>
+                    Real estate & M&A advisory | Sustainable development | Enterprise solutions
+                </p>
             </div>
         </div>
     </section>
     <section id="expertise">
         <div class="container">
-            <h2 id="expertise-h2">提供サービス</h2>
+            <h2 id="expertise-h2">Our Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card">
-                    <h3 id="card1-h3">戦略アドバイザリー／マネジメント・コンサルティング</h3>
-                    <p id="card1-p">事業開発、投資計画、ならびに組織的な意思決定を支えるため、マネジメント・コンサルティングおよび戦略アドバイザリーを提供しています。コーポレート戦略、プロジェクトのストラクチャリング、オペレーションモデル、リスクマネジメントを対象に、中長期的な価値創出を重視した支援を行っています。</p>
+                    <h3 id="card1-h3">Strategic Advisory & Management Consulting</h3>
+                    <p id="card1-p">We provide management consulting and strategic advisory services to support business development, investment planning, and organizational decision-making. Our work covers corporate strategy, project structuring, operational models, and risk management, with a strong focus on long-term value creation.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card2-h3">リサーチ／マーケット・インテリジェンス／応用R&D</h3>
-                    <p id="card2-p">経済、技術、社会の各側面から、リサーチおよび市場分析を行っています。市場調査、フィージビリティスタディ、応用研究、技術分析を通じて、政策設計、投資判断、ならびにプロジェクト開発を支える知見の提供を行っています。</p>
+                    <h3 id="card2-h3">Research, Market Intelligence & Applied R&D</h3>
+                    <p id="card2-p">Lam Capital conducts research and market analysis across economic, technical, and social dimensions. Our services include market research, feasibility studies, applied research, and technical analysis to support policy design, investment decisions, and project development.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card3-h3">サステナブル建設／ビルト・エンバイロメント関連サービス</h3>
-                    <p id="card3-p">建設および建築関連業務において、技術アドバイザリー、システム導入支援、プロジェクト調整、ならびに竣工支援を提供しています。住宅、商業施設、ならびに特殊用途開発を対象に、サステナビリティ、効率性、ライフサイクル性能を統合したプロジェクト遂行を支援しています。</p>
+                    <h3 id="card3-h3">Sustainable Construction & Built Environment Services</h3>
+                    <p id="card3-p">We support construction and building-related activities through technical advisory, system installation, project coordination, and completion support. Our approach integrates sustainability, efficiency, and lifecycle performance into the delivery of residential, commercial, and specialized developments.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card4-h3">不動産・都市開発アドバイザリー</h3>
-                    <p id="card4-p">不動産開発および都市計画分野において、初期構想段階から実装・実行フェーズまでのプロジェクト推進を支援しています。
-土地利用、設計、インフラ、投資戦略を統合し、レジリエンスと人間中心性、ならびに経済合理性を備えた都市環境の構築を支援しています。
-クトのストラクチャリング、オペレーションモデル、リスクマネジメントを対象に、中長期的な価値創出を重視した支援を行っています。</p>
+                    <h3 id="card4-h3">Real Estate & Urban Development Advisory</h3>
+                    <p id="card4-p">Lam Capital advises on real estate development and urban planning, supporting projects from early concept to implementation. We help align land use, design, infrastructure, and investment strategies to create resilient, people-centered, and economically viable urban environments.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card5-h3">ESG／サステナブル・ファイナンス アドバイザリー</h3>
-                    <p id="card5-p">プロジェクト、企業、ポートフォリオにおけるESG（環境・社会・ガバナンス）の統合を支援しています。
-
-ESG戦略の策定、サステナビリティ評価、国際的フレームワークとの整合を通じて、グリーン、サステナブル、ならびに気候変動対応型ファイナンスへのアクセスを可能にしています。</p>
+                    <h3 id="card5-h3">ESG & Sustainable Finance Advisory</h3>
+                    <p id="card5-p">We assist clients in integrating environmental, social, and governance (ESG) considerations into projects, companies, and portfolios. Services include ESG strategy development, sustainability assessments, and alignment with international frameworks, enabling access to green, sustainable, and climate-aligned finance.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card6-h3">投資に向けたポートフォリオ・ストラクチャリング</h3>
-                    <p id="card6-p">国内外の投資家を対象とした投資に向け、プロジェクトおよび資産ポートフォリオの整理・体系化を支援しています。
-
-技術・財務・ESG関連ドキュメントの標準化、透明性の向上を通じて、機関投資家の期待に沿ったポートフォリオ構築を支援しています。</p>
+                    <h3 id="card6-h3">Portfolio Structuring for Investment</h3>
+                    <p id="card6-p">Lam Capital supports clients in formalizing projects and asset portfolios for domestic and international investment. This includes standardizing technical, financial, and ESG documentation, improving transparency, and positioning portfolios to meet institutional investor expectations.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card7-h3">グローバル資本およびパートナーシップへのアクセス</h3>
-                    <p id="card7-p">国内の投資機会と、国際的な投資家、開発金融機関、気候ファンドをつなぐ役割を担っています。
-
-ローカルなプロジェクトの実態を投資可能な提案へと整理し、グローバル資本の要件に沿った形での資金導入を支援しています。</p>
+                    <h3 id="card7-h3">Access to Global Capital & Partnerships</h3>
+                    <p id="card7-p">We act as a bridge between local opportunities and international investors, development finance institutions, and climate funds. Our role is to translate local project realities into investment-ready propositions aligned with global capital requirements.</p>
                 </div>
                 <div class="expertise-card">
-                    <h3 id="card8-h3">コミュニケーション／メディア／プロモーション</h3>
-                    <p id="card8-p">アドバイザリー業務を補完する形で、コンテンツ制作や映像制作を含むコミュニケーション、メディア制作、広告・プロモーション活動を行っています。
-
-プロジェクトの可視性向上、ステークホルダーとの関係構築、ならびに市場への情報発信を支援しています。</p>
+                    <h3 id="card8-h3">Communications, Media & Promotion</h3>
+                    <p id="card8-p">Complementing our advisory work, Lam Capital engages in communications, media production, advertising, and promotional activities, including content development and audiovisual production, to support project visibility, stakeholder engagement, and market outreach.</p>
                 </div>
             </div>
         </div>
     </section>
     <section id="media">
         <div class="container">
-            <h2 id="media-h2">ニュース</h2>
+            <h2 id="media-h2">In the News</h2>
             <div class="news-list">
                 <ul>
                     <li>
-                        <a href="https://vir.com.vn/private-sector-offers-up-urban-potential-129699.html" target="_blank">民間セクターが切り拓く都市の可能性（2025年・最多閲覧）</a>
-                        <p>VIR｜2025年6月</p>
+                        <a href="https://vir.com.vn/private-sector-offers-up-urban-potential-129699.html" target="_blank">Private sector offers up urban potential (2025 most viewed)</a>
+                        <p>VIR | June 2025</p>
                     </li>
                     <li>
-                        <a href="https://vir.com.vn/precise-planning-vital-for-relocation-of-ips-113193.html" target="_blank">工業団地移転における精緻な計画の重要性</a>
-                        <p>VIR｜2024年7月</p>
+                        <a href="https://vir.com.vn/precise-planning-vital-for-relocation-of-ips-113193.html" target="_blank">Precise planning vital for relocation of IPs</a>
+                        <p>VIR | July 2024</p>
                     </li>
                     <li>
-                        <a href="https://vir.com.vn/the-pros-and-cons-of-ip-relocations-112404.html" target="_blank">工業団地移転のメリットと課題</a>
-                        <p>VIR｜2024年7月</p>
+                        <a href="https://vir.com.vn/the-pros-and-cons-of-ip-relocations-112404.html" target="_blank">The pros and cons of IP relocations</a>
+                        <p>VIR | July 2024</p>
                     </li>
                     <div class="additional-news">
                         <li>
@@ -618,7 +609,7 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                             <p>VIR, April 2024</p>
                         </li>
                         <li>
-                            <a href="https://vir.com.vn/how-real-estate-developers-can-benefit-from-esg-considerations-99226.html" target="_blank">How real estate developers can benefit from ESG considerations 2023, No 1 most viewed</a>
+                            <a href="https://vir.com.vn/how-real-estate-developers-can-benefit-from-esg-considerations-99226.html" target="_blank">How real estate developers can benefit from ESG considerations (2023 No.1 most viewed)</a>
                             <p>VIR, January 2023</p>
                         </li>
                         <li>
@@ -630,7 +621,7 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                             <p>Tin Nhanh Chung Khoan, June 2024</p>
                         </li>
                         <li>
-                            <a href="https://dantri.com.vn/kinh-doanh/tiep-can-esg-bat-dau-tu-dau-lam-sao-toi-da-hieu-qua-nguon-luc-20240411153558726.htm" target="_blank">Navigating ESG: Initial Steps and Strategies for Optimal Resource Utilization (In Vietnamese) 2024</a>
+                            <a href="https://dantri.com.vn/kinh-doanh/tiep-can-esg-bat-dau-tu-dau-lam-sao-toi-da-hieu-qua-nguon-luc-20240411153558726.htm" target="_blank">Navigating ESG: Initial Steps and Strategies for Optimal Resource Utilization</a>
                             <p>Dan Tri, April 2024</p>
                         </li>
                         <li>
@@ -638,39 +629,39 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                             <p>VIR, December 2025</p>
                         </li>
                         <li>
-                            <a href="https://e.vnexpress.net/news/perspectives/saigon-river-has-much-to-offer-and-hcmc-should-use-it-smartly-4515082.html" target="_blank">Saigon River basin planning</a>
+                            <a href="https://e.vnexpress.net/news/perspectives/saigon-river-has-much-to-offer-and-hcmc-should-use-it-smartly-4515082.html" target="_blank">Saigon River has much to offer and HCMC should use it smartly</a>
                             <p>VNExpress Opinion, October 2022</p>
                         </li>
                     </div>
                 </ul>
                 <div class="news-toggle">
-                    <button id="toggleNews">さらに記事を表示</button>
+                    <button id="toggleNews">See More Articles</button>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
-            <h2 id="contact-h2">お問い合わせ</h2>
+            <h2 id="contact-h2">Contact Us</h2>
             <div class="contact-content">
-                <p id="contact-email"><strong>メール：</strong> <a href="mailto:info@lamcapitalgroup.com">info@lamcapitalgroup.com</a></p>
-                <p id="contact-phone"><strong>電話：</strong> <a href="tel:+84774208208">+84 774 208 208</a></p>
-                <p id="contact-address"><strong>所在地：</strong> 36 Mac Dinh Chi, Tan Dinh, Ho Chi Minh City</p>
+                <p id="contact-email"><strong>Email:</strong> <a href="mailto:info@lamcapitalgroup.com">info@lamcapitalgroup.com</a></p>
+                <p id="contact-phone"><strong>Phone:</strong> <a href="tel:+84774208208">+84 774 208 208</a></p>
+                <p id="contact-address"><strong>Address:</strong> 36 Mac Dinh Chi, Tan Dinh, Ho Chi Minh City</p>
                 <form>
                     <div class="form-group">
-                        <label id="label-name" for="name">お名前</label>
+                        <label id="label-name" for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label id="label-email" for="email">メールアドレス</label>
+                        <label id="label-email" for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label id="label-message" for="message">メッセージ</label>
+                        <label id="label-message" for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <div class="form-group">
-                        <button id="btn-send" type="submit">メッセージ送信</button>
+                        <button id="btn-send" type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -680,7 +671,7 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
         <div class="container">
             <div class="footer-content">
                 <p id="footer-p1">© 2026 Lam Capital Investment & Advisory Co., Ltd. All Rights Reserved.</p>
-                <p id="footer-p2">パートナーシップや各種ご相談につきましては、お気軽にお問い合わせください。</p>
+                <p id="footer-p2">Contact us for partnerships and inquiries.</p>
             </div>
         </div>
     </footer>
@@ -699,9 +690,9 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 hero_tagline: "Where capital, real estate, and sustainability converge",
                 hero_subtitle: "Turning Strategy, Research, and Capital into Sustainable Impact",
                 hero_cta: "Learn More",
-                about_p1: "Lam Capital Investment & Advisory Co., Ltd. is a multidisciplinary firm providing investment advisory, management consulting, research, and project delivery services across sustainable development, urban systems, real estate, and related industries.",
+                about_p1: "<strong>Lam Capital Investment & Advisory Co., Ltd.</strong> is a multidisciplinary firm providing investment advisory, management consulting, research, and project delivery services across sustainable development, urban systems, real estate, and related industries.",
                 about_p2: "We work with private companies, investors, and public-sector partners to structure, develop, and formalize projects and portfolios that are technically sound, commercially viable, and aligned with international ESG and sustainability standards.",
-                map_p: "Turning complex developments into investable, sustainable outcomes.<br> Real estate and M&A advisory | ESG & green development | Enterprise solutions",
+                map_p: "<strong>Turning complex developments into investable, sustainable outcomes.</strong><br>Real estate & M&A advisory | Sustainable development | Enterprise solutions",
                 expertise_h2: "Our Expertise",
                 card1_h3: "Strategic Advisory & Management Consulting",
                 card1_p: "We provide management consulting and strategic advisory services to support business development, investment planning, and organizational decision-making. Our work covers corporate strategy, project structuring, operational models, and risk management, with a strong focus on long-term value creation.",
@@ -727,7 +718,7 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 contact_phone: "Phone",
                 contact_address: "Address",
                 label_name: "Name",
-                label_email: "Email",
+                label_email: "Email Address",
                 label_message: "Message",
                 btn_send: "Send Message",
                 form_submit: "Thank you for your message! We will get back to you soon.",
@@ -744,11 +735,11 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 nav_contact: "お問い合わせ",
                 hero_h1: "Lam Capital",
                 hero_tagline: "資本、不動産、サステナビリティが交わるアドバイザリー",
-                hero_subtitle: "ベトナム市場の不動産・M&Aアドバイザリー、ESGを軸とした開発支援、ならびに戦略実行を支えるエンタープライズソリューションを提供しています。",
+                hero_subtitle: "ベトナム市場の不動産・M&Aアドバイザリー、 ESGを軸とした開発支援、ならびに戦略実行を支えるエンタープライズソリューションを提供しています。",
                 hero_cta: "詳細はこちら",
-                about_p1: "Lam Capital Investment & Advisory Co., Ltd. は、サステナブル開発、都市システム、不動産および関連分野において、投資アドバイザリー、経営コンサルティング、調査・リサーチ、ならびにプロジェクト実行支援を行う ",
-                about_p2: "分野横断型のアドバイザリーファームです。民間企業、投資家、公共セクターとの連携を通じて、技術的妥当性および事業性を備え、国際的なESG・サステナビリティ基準に整合したプロジェクトおよびポートフォリオの構築・整理・実行を支援しています。",
-                map_p: "複雑な開発を、投資可能で持続可能な成果へ。不動産・M&Aアドバイザリー｜ESG・グリーン開発｜エンタープライズソリューション",
+                about_p1: "<strong>Lam Capital Investment & Advisory Co., Ltd.</strong> は、サステナブル開発、都市システム、不動産および関連分野において、投資アドバイザリー、経営コンサルティング、調査・リサーチ、ならびにプロジェクト実行支援を行う分野横断型のアドバイザリーファームです。",
+                about_p2: "民間企業、投資家、公共セクターとの連携を通じて、技術的妥当性および事業性を備え、国際的なESG・サステナビリティ基準に整合した プロジェクトおよびポートフォリオの構築・整理・実行を支援しています。",
+                map_p: "<strong>複雑な開発を、投資可能で持続可能な成果へ。</strong><br>不動産・M&Aアドバイザリー｜ESG・グリーン開発｜エンタープライズソリューション",
                 expertise_h2: "提供サービス",
                 card1_h3: "戦略アドバイザリー／マネジメント・コンサルティング",
                 card1_p: "事業開発、投資計画、ならびに組織的な意思決定を支えるため、マネジメント・コンサルティングおよび戦略アドバイザリーを提供しています。コーポレート戦略、プロジェクトのストラクチャリング、オペレーションモデル、リスクマネジメントを対象に、中長期的な価値創出を重視した支援を行っています。",
@@ -757,7 +748,7 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 card3_h3: "サステナブル建設／ビルト・エンバイロメント関連サービス",
                 card3_p: "建設および建築関連業務において、技術アドバイザリー、システム導入支援、プロジェクト調整、ならびに竣工支援を提供しています。住宅、商業施設、ならびに特殊用途開発を対象に、サステナビリティ、効率性、ライフサイクル性能を統合したプロジェクト遂行を支援しています。",
                 card4_h3: "不動産・都市開発アドバイザリー",
-                card4_p: "不動産開発および都市計画分野において、初期構想段階から実装・実行フェーズまでのプロジェクト推進を支援しています。土地利用、設計、インフラ、投資戦略を統合し、レジリエンスと人間中心性、ならびに経済合理性を備えた都市環境の構築を支援しています。クトのストラクチャリング、オペレーションモデル、リスクマネジメントを対象に、中長期的な価値創出を重視した支援を行っています。",
+                card4_p: "不動産開発および都市計画分野において、初期構想段階から実装・実行フェーズまでのプロジェクト推進を支援しています。土地利用、設計、インフラ、投資戦略を統合し、レジリエンスと人間中心性、ならびに経済合理性を備えた都市環境の構築を支援しています。",
                 card5_h3: "ESG／サステナブル・ファイナンス アドバイザリー",
                 card5_p: "プロジェクト、企業、ポートフォリオにおけるESG（環境・社会・ガバナンス）の統合を支援しています。ESG戦略の策定、サステナビリティ評価、国際的フレームワークとの整合を通じて、グリーン、サステナブル、ならびに気候変動対応型ファイナンスへのアクセスを可能にしています。",
                 card6_h3: "投資に向けたポートフォリオ・ストラクチャリング",
@@ -783,23 +774,29 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 back_to_top: "↑"
             }
         };
+
         let currentLang = 'en';
+
         function setLanguage(lang) {
             currentLang = lang;
             document.documentElement.setAttribute('lang', lang);
             document.title = translations[lang].title;
+
             document.getElementById('nav-home').textContent = translations[lang].nav_home;
             document.getElementById('nav-about').textContent = translations[lang].nav_about;
             document.getElementById('nav-expertise').textContent = translations[lang].nav_expertise;
             document.getElementById('nav-media').textContent = translations[lang].nav_media;
             document.getElementById('nav-contact').textContent = translations[lang].nav_contact;
+
             document.getElementById('hero-h1').textContent = translations[lang].hero_h1;
             document.getElementById('hero-tagline').textContent = translations[lang].hero_tagline;
             document.getElementById('hero-subtitle').textContent = translations[lang].hero_subtitle;
             document.getElementById('hero-cta').textContent = translations[lang].hero_cta;
-            document.getElementById('about-p1').textContent = translations[lang].about_p1;
+
+            document.getElementById('about-p1').innerHTML = translations[lang].about_p1;
             document.getElementById('about-p2').textContent = translations[lang].about_p2;
-            document.getElementById('map-p').textContent = translations[lang].map_p;
+            document.getElementById('map-p').innerHTML = translations[lang].map_p;
+
             document.getElementById('expertise-h2').textContent = translations[lang].expertise_h2;
             document.getElementById('card1-h3').textContent = translations[lang].card1_h3;
             document.getElementById('card1-p').textContent = translations[lang].card1_p;
@@ -817,24 +814,33 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
             document.getElementById('card7-p').textContent = translations[lang].card7_p;
             document.getElementById('card8-h3').textContent = translations[lang].card8_h3;
             document.getElementById('card8-p').textContent = translations[lang].card8_p;
+
             document.getElementById('media-h2').textContent = translations[lang].media_h2;
-            document.getElementById('toggleNews').textContent = translations[lang].toggle_initial;
+            document.getElementById('toggleNews').textContent = isExpanded 
+                ? translations[lang].toggle_less 
+                : translations[lang].toggle_initial;
+
             document.getElementById('contact-h2').textContent = translations[lang].contact_h2;
             document.getElementById('contact-email').innerHTML = `<strong>${translations[lang].contact_email}：</strong> <a href="mailto:info@lamcapitalgroup.com">info@lamcapitalgroup.com</a>`;
             document.getElementById('contact-phone').innerHTML = `<strong>${translations[lang].contact_phone}：</strong> <a href="tel:+84774208208">+84 774 208 208</a>`;
             document.getElementById('contact-address').innerHTML = `<strong>${translations[lang].contact_address}：</strong> 36 Mac Dinh Chi, Tan Dinh, Ho Chi Minh City`;
+
             document.getElementById('label-name').textContent = translations[lang].label_name;
             document.getElementById('label-email').textContent = translations[lang].label_email;
             document.getElementById('label-message').textContent = translations[lang].label_message;
             document.getElementById('btn-send').textContent = translations[lang].btn_send;
+
             document.getElementById('footer-p1').textContent = translations[lang].footer_p1;
             document.getElementById('footer-p2').textContent = translations[lang].footer_p2;
             document.getElementById('backToTop').textContent = translations[lang].back_to_top;
+
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`lang-${lang}`).classList.add('active');
         }
+
         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
         document.getElementById('lang-ja').addEventListener('click', () => setLanguage('ja'));
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -843,10 +849,12 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
                 });
             });
         });
+
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert(translations[currentLang].form_submit);
         });
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -859,18 +867,24 @@ ESG戦略の策定、サステナビリティ評価、国際的フレームワ�
             const backToTopBtn = document.getElementById('backToTop');
             backToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
         });
+
         document.getElementById('backToTop').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
         const toggleBtn = document.getElementById('toggleNews');
         const additionalNews = document.querySelector('.additional-news');
         let isExpanded = false;
+
         toggleBtn.addEventListener('click', () => {
             isExpanded = !isExpanded;
             additionalNews.classList.toggle('expanded', isExpanded);
-            toggleBtn.textContent = isExpanded ? translations[currentLang].toggle_less : translations[currentLang].toggle_initial;
+            toggleBtn.textContent = isExpanded 
+                ? translations[currentLang].toggle_less 
+                : translations[currentLang].toggle_initial;
         });
-        // Start with English
+
+        // Start with English (or change to 'ja' if preferred)
         setLanguage('en');
     </script>
 </body>
